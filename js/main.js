@@ -1,10 +1,12 @@
 // onclick
-$('#random').on('click', () => {});
+$('#btn').on('click', () => {
+  console.log('click btn');
+});
 
 // filter
-let threads = GmailApp.search('Kindle');
-threads.filter((mail) => {
-  mail.moveToTrash();
+const price = [100, 500, 1000];
+price.filter((value) => {
+  console.log(value);
 });
 
 // Vue
