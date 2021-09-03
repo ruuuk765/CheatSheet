@@ -1,3 +1,5 @@
+https://mitsuruog.github.io/javascript-style-guide/
+
 // onclick
 $('#btn').on('click', () => {
   console.log('click btn');
