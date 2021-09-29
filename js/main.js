@@ -1,15 +1,17 @@
-https://mitsuruog.github.io/javascript-style-guide/
+//mitsuruog.github.io/javascript-style-guide/
 
 // onclick
-$('#btn').on('click', () => {
+https: $('#btn').on('click', () => {
   console.log('click btn');
 });
 
 // filter
 const price = [100, 500, 1000];
-price.filter((value) => {
-  console.log(value);
+price.filter((val) => {
+  console.log(val);
 });
+
+const over300 = price.filter((val) => val > 300);
 
 // Vue
 new Vue({
