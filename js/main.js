@@ -1,7 +1,8 @@
+// Airbnb JavaScript スタイルガイド
 //mitsuruog.github.io/javascript-style-guide/
 
 // onclick
-https: $('#btn').on('click', () => {
+$('#btn').on('click', () => {
   console.log('click btn');
 });
 

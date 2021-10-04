@@ -14,9 +14,43 @@
   <header></header>
   <div id="app">
     {{name}}：{{age}}：{{now}}
-    <button type="button" value="add" @click="add()"></button>
+    <button type="button" value="add" @click="add()">add</button>
   </div>
   <footer></footer>
+
+
+
+  <!-- テーブル -->
+  <style>
+    th,
+    td {
+      border: 1px solid #333;
+      padding: 10px;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+  </style>
+
+  <table>
+    <thead>
+      <tr>
+        <th>年</th>
+        <th>出来事</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2015年</td>
+        <td>会社設立</td>
+      </tr>
+      <tr>
+        <td>2019年</td>
+        <td>会社リニューアル</td>
+      </tr>
+    </tbody>
+  </table>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
