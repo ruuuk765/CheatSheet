@@ -15,8 +15,9 @@ docker-compose ps
 docker-compose exec サービス名 bash  
     コンテナの中に入る、サービス名は「docker-compose.yml」に記述した名前  
 
-docker-compose run サービス名 コマンド
+docker-compose run --rm サービス名 コマンド
     コンテナ内でコマンドの内容が実行される
+    「--rm」を付けないとrunの度にコンテナが生成される
 
 docker-compose down  
     イメージ、コンテナ、ボリューム、ネットワーク削除  
