@@ -6,6 +6,13 @@ $('#btn').on('click', () => {
   console.log('click btn');
 });
 
+// アロー関数でのthis
+$('li').on('click', (e) => {
+  // thisと同じ内容
+  console.log($(e.target));
+});
+
+
 // filter
 const price = [100, 500, 1000];
 price.filter((val) => {
