@@ -21,6 +21,7 @@ price.filter((val) => {
 
 const over300 = price.filter((val) => val > 300);
 
+
 // Vue
 new Vue({
   el: '#app',
