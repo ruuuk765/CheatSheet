@@ -30,7 +30,7 @@ docker-compose down --rmi all --volumes --remove-orphans
     down前にdocker-compose.ymlファイルを編集した場合、以前のコンテナが残る。「--remove-orphans」はそれも削除する  
 
 docker system prune -a -f; docker system prune --volumes -f; docker system df
-    dockerの全データ削除、最後のは確認用
+    dockerの全コンテナ、ボリュームデータ削除、最後のは確認用
 
 docker-compose logs サービス名  
     コンテナのログが表示される、サービスを付けない場合、全コンテナのログが表示  
