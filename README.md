@@ -26,7 +26,7 @@ docker-compose stop
     コンテナ停止  
 
 docker-compose down --rmi all --volumes --remove-orphans  
-    開いているコンテナを全削除
+    開いているコンテナを全削除  
     down前にdocker-compose.ymlファイルを編集した場合、以前のコンテナが残る。「--remove-orphans」はそれも削除する  
 
 docker system prune -a -f; docker system prune --volumes -f; docker system df  
@@ -41,9 +41,9 @@ docker-compose logs サービス名
 ## Linux コマンド
 
 grep -lr "test"  
-    "test"が含まれるファイル名・ファイル内を検索
-    ~ "test" /home とパス内の指定も可能
-    パスを指定しないと現在位置からの検索となり、ルート検索だとかなり時間がかかる
+    "test"が含まれるファイル名・ファイル内を検索  
+    ~ "test" /home とパス内の指定も可能  
+    パスを指定しないと現在位置からの検索となり、ルート検索だとかなり時間がかかる  
 
 find ./ -name "*.html"  
     ファイル名検索、-nameを付けるとワイルドカードが使える。
